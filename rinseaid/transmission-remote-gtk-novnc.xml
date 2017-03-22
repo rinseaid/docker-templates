@@ -26,8 +26,8 @@
   <Config Name="Data Path" Target="/mnt/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/data</Config>
   <Config Name="VNC Password" Target="VNC_PASSWD" Default="" Mode="" Description="Container Variable: VNC_PASSWD" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="VNC Geometry" Target="VNC_GEOMETRY" Default="800x600" Mode="" Description="Container Variable: VNC_GEOMETRY" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
-  <Config Name="Web Port" Target="9980" Default="" Mode="tcp" Description="Container Port: " Type="Port" Display="advanced-hide" Required="false" Mask="false"></Config>
-  <Config Name="X Display" Target="DISPLAY" Default="" Mode="" Description="Container Variable: DISPLAY" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config> 
+  <Config Name="Web Port" Target="9980" Default="9980" Mode="tcp" Description="Container Port: " Type="Port" Display="advanced-hide" Required="false" Mask="false"></Config>
+  <Config Name="X Display" Target="DISPLAY" Default=":1" Mode="" Description="Container Variable: DISPLAY" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config> 
   <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
   <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config> 
   <WebUI>http://[IP]:[PORT:9980]/</WebUI>
