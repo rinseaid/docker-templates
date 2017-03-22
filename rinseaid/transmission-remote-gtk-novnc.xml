@@ -21,13 +21,6 @@
   <Privileged>false</Privileged>
   <Networking>
     <Mode>host</Mode>
-    <Publish>
-      <Port>
-        <HostPort>9980</HostPort>
-		<ContainerPort>9980</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
   </Networking>
   <Config Name="Configuration Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/config</Config>
   <Config Name="Data Path" Target="/mnt/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/data</Config>
