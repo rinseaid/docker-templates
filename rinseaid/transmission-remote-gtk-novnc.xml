@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Name>rinseaid-transmission-remote-gtk</Name>
+  <Description>
+    transmission-remote-gtk is a GTK client for remote management of the Transmission BitTorrent client, using its HTTP RPC protocol.[br]
+    This Docker includes a novnc instance to allow interaction through a web browser[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where transmission-remote-gtk will store it's configuration file, database and logs.[br]
+    [b]/data[/b] This is where transmission-remote-gtk can access torrent data.[br][br]
+  </Description>
+  <Overview>
+    transmission-remote-gtk is a GTK client for remote management of the Transmission BitTorrent client, using its HTTP RPC protocol.[br]
+    This Docker includes a novnc instance to allow interaction through a web browser[br][br]
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/rinseaid/transmission-remote-gtk-novnc/</Registry>
+  <Repository>rinseaid/transmission-remote-gtk-novnc</Repository>
+  <Project>https://github.com/transmission-remote-gtk/transmission-remote-gtk</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9980</HostPort>
+		<ContainerPort>9980</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>VNC_PASSWD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>800x600</Value>
+      <Name>VNC_GEOMETRY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>:1</Value>
+      <Name>DISPLAY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Config Name="Configuration Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/config</Config>
+  <Config Name="Data Path" Target="/mnt/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/data</Config>
+  <Config Name="VNC Password" Target="VNC_PASSWD" Default="" Mode="" Description="Container Variable: VNC_PASSWD" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VNC Geometry" Target="VNC_GEOMETRY" Default="" Mode="" Description="Container Variable: VNC_GEOMETRY" Type="Variable" Display="always" Required="false" Mask="false">800x600</Config>
+  <Config Name="Web Port" Target="9980" Default="" Mode="tcp" Description="Container Port: " Type="Port" Display="always" Required="false" Mask="false">9980</Config>
+  <Config Name="X Display" Target="DISPLAY" Default="" Mode="" Description="Container Variable: DISPLAY" Type="Variable" Display="always" Required="false" Mask="false">:1</Config> 
+  <WebUI>http://[IP]:[PORT:9980]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/rinseaid/docker-templates/master/rinseaid/images/transmission-remote-gtk-novnc-icon.png</Icon>
+</Containers>
