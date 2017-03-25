@@ -143,7 +143,7 @@
   </Overview>
   <Registry>https://registry.hub.docker.com/u/rinseaid/transmission-openvpn/</Registry>
   <Repository>rinseaid/transmission-openvpn</Repository>
-  <Project>https://github.com/rinseaid/trasmission-openvpn</Project>
+  <Project>https://registry.hub.docker.com/u/rinseaid/transmission-openvpn/</Project>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
