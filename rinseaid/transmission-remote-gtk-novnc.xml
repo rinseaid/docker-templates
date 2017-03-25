@@ -16,7 +16,7 @@
   </Overview>
   <Registry>https://registry.hub.docker.com/u/rinseaid/transmission-remote-gtk-novnc/</Registry>
   <Repository>rinseaid/transmission-remote-gtk-novnc</Repository>
-  <Project>https://github.com/transmission-remote-gtk/transmission-remote-gtk</Project>
+  <Project>https://github.com/rinseaid/transmission-remote-gtk</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>

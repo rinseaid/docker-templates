@@ -160,4 +160,6 @@
   <Config Name="Local Network" Target="LOCAL_NETWORK" Default="192.168.1.0/24" Mode="" Description="Container Variable: LOCAL_NETWORK" Type="Variable" Display="advanced_hide" Required="false" Mask="false">192.168.1.0/24</Config>
   <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced_hide" Required="false" Mask="false"></Config>
   <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced_hide" Required="false" Mask="false"></Config>
+  <WebUI>http://[IP]:[PORT:9091]</WebUI>
+  <Icon>https://raw.githubusercontent.com/rinseaid/docker-templates/master/rinseaid/images/transmission-openvpn-icon.png</Icon>
  </Container>
