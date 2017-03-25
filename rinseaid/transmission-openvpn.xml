@@ -14,127 +14,127 @@
 	[b]OPENVPN_CONFIG[/b] Sets the OpenVPN endpoint to connect to. e.g. UK Southampton[br]
 	[b]OPENVPN_OPTS[/b]	Will be passed to OpenVPN on startup[br]
 	[b]LOCAL_NETWORK[/b] Sets the local network that should have access. e.g. 192.168.0.0/24. This is needed to access the WebUI, because when the VPN is active, and since docker is running in a different IP range than your client the response to your request will be treated as "non-local" traffic and therefore be routed out through the VPN interface.[br][br]
-	<table>
-	<thead>
-	<tr>
-	<th align="left">Provider Name</th>
-	<th align="left">Config Value</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-	<td align="left">Anonine</td>
-	<td align="left"><code>ANONINE</code></td>
-	</tr>
-	<tr>
-	<td align="left">BTGuard</td>
-	<td align="left"><code>BTGUARD</code></td>
-	</tr>
-	<tr>
-	<td align="left">Cryptostorm</td>
-	<td align="left"><code>CRYPTOSTORM</code></td>
-	</tr>
-	<tr>
-	<td align="left">FrootVPN</td>
-	<td align="left"><code>FROOT</code></td>
-	</tr>
-	<tr>
-	<td align="left">FrostVPN</td>
-	<td align="left"><code>FROSTVPN</code></td>
-	</tr>
-	<tr>
-	<td align="left">Giganews</td>
-	<td align="left"><code>GIGANEWS</code></td>
-	</tr>
-	<tr>
-	<td align="left">HideMe</td>
-	<td align="left"><code>HIDEME</code></td>
-	</tr>
-	<tr>
-	<td align="left">HideMyAss</td>
-	<td align="left"><code>HIDEMYASS</code></td>
-	</tr>
-	<tr>
-	<td align="left">IntegrityVPN</td>
-	<td align="left"><code>INTEGRITYVPN</code></td>
-	</tr>
-	<tr>
-	<td align="left">IPVanish</td>
-	<td align="left"><code>IPVANISH</code></td>
-	</tr>
-	<tr>
-	<td align="left">Ivacy</td>
-	<td align="left"><code>IVACY</code></td>
-	</tr>
-	<tr>
-	<td align="left">IVPN</td>
-	<td align="left"><code>IVPN</code></td>
-	</tr>
-	<tr>
-	<td align="left">Newshosting</td>
-	<td align="left"><code>NEWSHOSTING</code></td>
-	</tr>
-	<tr>
-	<td align="left">NordVPN</td>
-	<td align="left"><code>NORDVPN</code></td>
-	</tr>
-	<tr>
-	<td align="left">OVPN</td>
-	<td align="left"><code>OVPN</code></td>
-	</tr>
-	<tr>
-	<td align="left">Private Internet Access</td>
-	<td align="left"><code>PIA</code></td>
-	</tr>
-	<tr>
-	<td align="left">PrivateVPN</td>
-	<td align="left"><code>PRIVATEVPN</code></td>
-	</tr>
-	<tr>
-	<td align="left">PureVPN</td>
-	<td align="left"><code>PUREVPN</code></td>
-	</tr>
-	<tr>
-	<td align="left">RA4W VPN</td>
-	<td align="left"><code>RA4W</code></td>
-	</tr>
-	<tr>
-	<td align="left">SlickVPN</td>
-	<td align="left"><code>SLICKVPN</code></td>
-	</tr>
-	<tr>
-	<td align="left">SmartVPN</td>
-	<td align="left"><code>SMARTVPN</code></td>
-	</tr>
-	<tr>
-	<td align="left">TigerVPN</td>
-	<td align="left"><code>TIGER</code></td>
-	</tr>
-	<tr>
-	<td align="left">TorGuard</td>
-	<td align="left"><code>TORGUARD</code></td>
-	</tr>
-	<tr>
-	<td align="left">UsenetServerVPN</td>
-	<td align="left"><code>USENETSERVER</code></td>
-	</tr>
-	<tr>
-	<td align="left">Windscribe</td>
-	<td align="left"><code>WINDSCRIBE</code></td>
-	</tr>
-	<tr>
-	<td align="left">VPN.ht</td>
-	<td align="left"><code>VPNHT</code></td>
-	</tr>
-	<tr>
-	<td align="left">VPNBook.com</td>
-	<td align="left"><code>VPNBOOK</code></td>
-	</tr>
-	<tr>
-	<td align="left">VyprVpn</td>
-	<td align="left"><code>VYPRVPN</code></td>
-	</tr>
-	</table>
+	[table]
+	[thead]
+	[tr]
+	[th align="left"]Provider Name[/th]
+	[th align="left"]Config Value[/th]
+	[/tr]
+	[/thead]
+	[tbody]
+	[tr]
+	[td align="left"]Anonine[/td]
+	[td align="left"][code]ANONINE[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]BTGuard[/td]
+	[td align="left"][code]BTGUARD[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]Cryptostorm[/td]
+	[td align="left"][code]CRYPTOSTORM[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]FrootVPN[/td]
+	[td align="left"][code]FROOT[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]FrostVPN[/td]
+	[td align="left"][code]FROSTVPN[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]Giganews[/td]
+	[td align="left"][code]GIGANEWS[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]HideMe[/td]
+	[td align="left"][code]HIDEME[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]HideMyAss[/td]
+	[td align="left"][code]HIDEMYASS[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]IntegrityVPN[/td]
+	[td align="left"][code]INTEGRITYVPN[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]IPVanish[/td]
+	[td align="left"][code]IPVANISH[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]Ivacy[/td]
+	[td align="left"][code]IVACY[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]IVPN[/td]
+	[td align="left"][code]IVPN[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]Newshosting[/td]
+	[td align="left"][code]NEWSHOSTING[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]NordVPN[/td]
+	[td align="left"][code]NORDVPN[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]OVPN[/td]
+	[td align="left"][code]OVPN[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]Private Internet Access[/td]
+	[td align="left"][code]PIA[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]PrivateVPN[/td]
+	[td align="left"][code]PRIVATEVPN[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]PureVPN[/td]
+	[td align="left"][code]PUREVPN[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]RA4W VPN[/td]
+	[td align="left"][code]RA4W[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]SlickVPN[/td]
+	[td align="left"][code]SLICKVPN[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]SmartVPN[/td]
+	[td align="left"][code]SMARTVPN[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]TigerVPN[/td]
+	[td align="left"][code]TIGER[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]TorGuard[/td]
+	[td align="left"][code]TORGUARD[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]UsenetServerVPN[/td]
+	[td align="left"][code]USENETSERVER[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]Windscribe[/td]
+	[td align="left"][code]WINDSCRIBE[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]VPN.ht[/td]
+	[td align="left"][code]VPNHT[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]VPNBook.com[/td]
+	[td align="left"][code]VPNBOOK[/code][/td]
+	[/tr]
+	[tr]
+	[td align="left"]VyprVpn[/td]
+	[td align="left"][code]VYPRVPN[/code][/td]
+	[/tr]
+	[/table]
 	[br][br]
 	Based on the transmission-openvpn docker from https://github.com/haugene/docker-transmission-openvpn
   </Description>
