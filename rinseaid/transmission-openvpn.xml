@@ -164,4 +164,4 @@
   <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced_hide" Required="false" Mask="false"></Config>
   <WebUI>http://[IP]:[PORT:9091]</WebUI>
   <Icon>https://raw.githubusercontent.com/rinseaid/docker-templates/master/rinseaid/images/transmission-openvpn-icon.png</Icon>
- </Container>
+</Containers>
