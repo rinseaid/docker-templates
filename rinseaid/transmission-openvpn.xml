@@ -134,6 +134,7 @@
 	<td align="left">VyprVpn</td>
 	<td align="left"><code>VYPRVPN</code></td>
 	</tr>
+	</table>
 	[br][br]
 	Based on the transmission-openvpn docker from https://github.com/haugene/docker-transmission-openvpn
   </Description>
