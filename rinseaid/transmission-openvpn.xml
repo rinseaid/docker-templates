@@ -1,5 +1,6 @@
-<?xml version="1.0"?>
-<Beta>False</Beta>
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
   <Category>Downloaders:</Category>
   <Name>rinseaid-transmission-openvpn</Name>
   <Description>
