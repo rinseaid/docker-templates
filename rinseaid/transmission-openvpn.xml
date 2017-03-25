@@ -155,6 +155,8 @@
   <Config Name="Configuration Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/config</Config>
   <Config Name="Data Path" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/data</Config>
   <Config Name="Host Port 1" Target="9091" Default="9091" Mode="tcp" Description="Container Port: 9091" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Transmission Username" Target="TRANSMISSION_RPC_USERNAME" Default="" Mode="" Description="Container Variable: TRANSMISSION_RPC_USERNAME" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Transmission Password" Target="TRANSMISSION_RPC_PASSWORD" Default="" Mode="" Description="Container Variable: TRANSMISSION_RPC_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="OpenVPN Provider" Target="OPENVPN_PROVIDER" Default="" Mode="" Description="Container Variable: OPENVPN_PROVIDER" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="OpenVPN Username" Target="OPENVPN_USERNAME" Default="" Mode="" Description="Container Variable: OPENVPN_USERNAME" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="OpenVPN Password" Target="OPENVPN_PASSWORD" Default="" Mode="" Description="Container Variable: OPENVPN_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"></Config>
