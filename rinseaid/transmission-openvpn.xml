@@ -2,7 +2,7 @@
 <Containers>
   <Beta>False</Beta>
   <Category>Downloaders:</Category>
-  <Name>rinseaid-transmission-openvpn</Name>
+  <Name>transmission-openvpn</Name>
   <Description>
     transmission-openvpn is a container which runs the Transmission torrent client with WebUI while connecting to OpenVPN.[br]
 	When using PIA as provider it will update Transmission hourly with assigned open port.[br][br]

@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
   <Beta>False</Beta>
-  <Category>Downloaders:</Category>
-  <Name>transmission-remote-gtk</Name>
+  <Category>Browsers:</Category>
+  <Name>chrome-novnc</Name>
   <Description>
-    transmission-remote-gtk is a GTK client for remote management of the Transmission BitTorrent client, using its HTTP RPC protocol.[br]
+    Google Chrome is a freeware web browser developed by Google.[br]
     This Docker includes a novnc instance to allow interaction through a web browser[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where transmission-remote-gtk will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This is where transmission-remote-gtk can access torrent data.[br][br]
+    [b]/config[/b] This is where chrome-novnc will store it's configuration file, database and logs.[br]
   </Description>
   <Overview>
-    transmission-remote-gtk is a GTK client for remote management of the Transmission BitTorrent client, using its HTTP RPC protocol.[br]
+    Google Chrome is a freeware web browser developed by Google.[br]
     This Docker includes a novnc instance to allow interaction through a web browser[br][br]
   </Overview>
-  <Registry>https://registry.hub.docker.com/u/rinseaid/transmission-remote-gtk-novnc/</Registry>
-  <Repository>rinseaid/transmission-remote-gtk-novnc</Repository>
-  <Project>https://registry.hub.docker.com/u/rinseaid/transmission-remote-gtk-novnc/</Project>
+  <Registry>https://registry.hub.docker.com/u/rinseaid/chrome-novnc/</Registry>
+  <Repository>rinseaid/chrome-novnc</Repository>
+  <Project>https://registry.hub.docker.com/u/rinseaid/chrome-novnc/</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
     <Mode>bridge</Mode>
   </Networking>
   <Config Name="Configuration Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/config</Config>
-  <Config Name="Data Path" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/data</Config>
   <Config Name="VNC Password" Target="VNC_PASSWD" Default="" Mode="" Description="Container Variable: VNC_PASSWD" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="VNC Geometry" Target="VNC_GEOMETRY" Default="800x600" Mode="" Description="Container Variable: VNC_GEOMETRY" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
   <Config Name="Host Port 1" Target="9980" Default="9980" Mode="tcp" Description="Container Port: 9980" Type="Port" Display="always" Required="true" Mask="false"></Config>
   <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
   <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config> 
   <WebUI>http://[IP]:[PORT:9980]/vnc.html?autoconnect=true&amp;amp;host=[IP]&amp;amp;port=[PORT:9980]</WebUI>
-  <Icon>https://raw.githubusercontent.com/rinseaid/docker-templates/master/rinseaid/images/transmission-remote-gtk-novnc-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/rinseaid/docker-templates/master/rinseaid/images/chrome-novnc-icon.png</Icon>
 </Containers>
